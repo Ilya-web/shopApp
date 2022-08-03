@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+.product {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  border-radius: 8px;
+
+  &Img {
+    height: 200px;
+    display: flex;
+    padding: 20px 20px 0;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+      transition: $transition;
+    }
+
+    @media all and (hover: hover) {
+      &:hover {
+        img {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+
+  &Title {
+    font-size: 17px;
+    margin-bottom: 20px;
+    transition: $transition;
+
+    @media all and (hover: hover) {
+      &:hover {
+        color: $color-assets-hover;
+      }
+    }
+    &:active {
+      color: $color-assets-active;
+    }
+  }
+
+  &Desc {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &Price {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+}

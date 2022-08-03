@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.count {
+  display: inline-flex;
+  border-radius: 5px;
+  background: $color-white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+  height: 37px;
+
+  &Btn {
+    background: transparent;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+    transition: $transition;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media all and (hover: hover) {
+      &:hover {
+        background: $color-assets-hover;
+        color: $color-white;
+      }
+    }
+
+    &:active {
+      background: $color-assets-active;
+      color: $color-white;
+    }
+  }
+  input {
+    background: transparent;
+    border: 0;
+    width: 30px;
+    text-align: center;
+  }
+}

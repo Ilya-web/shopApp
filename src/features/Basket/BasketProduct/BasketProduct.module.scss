@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+.basket {
+  &Product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid $color-text;
+
+    &:first-child {
+      border-top: 1px solid $color-text;
+    }
+  }
+
+  &Img {
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    display: flex;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+  }
+
+  &Title {
+    width: 40%;
+  }
+
+  &Prise {
+    width: 20%;
+    text-align: center;
+  }
+
+  &Delete {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    padding: 3px;
+    background: transparent;
+    border: 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+    @media all and (hover: hover) {
+      &:hover {
+        svg {
+          fill: $color-assets-hover;
+        }
+      }
+    }
+    &:active {
+      svg {
+        fill: $color-assets-active;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: 768px){
+    display: flex;
+    overflow: auto;
+    padding: 10px;
+  }
+
+  li {
+    margin-bottom: 5px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 768px){
+      white-space: nowrap;
+      margin: 0;
+      padding: 0 10px 0 0;
+    }
+
+    a {
+      color: $color-text;
+      display: block;
+      padding: 10px;
+
+      @media screen and (max-width: 768px){
+        padding: 5px 10px;
+      }
+
+      @media all and (hover: hover) {
+        &:hover {
+          color: $color-white;
+          background: $color-assets-hover;
+        }
+      }
+
+      &:active {
+        background: $color-assets-active;
+      }
+    }
+
+    :global {
+      .active {
+        color: $color-white;
+        background: $color-assets;
+      }
+    }
+  }
+}
+

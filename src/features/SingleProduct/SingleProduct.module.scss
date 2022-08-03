@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.back {
+  display: inline-flex;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: $transition;
+
+  @media all and (hover: hover) {
+    &:hover {
+      color: $color-assets-hover;
+    }
+  }
+  &:active {
+    color: $color-assets-active;
+  }
+}
+
+.SingleProduct {
+  display: flex;
+
+  @media screen and (max-width: 575px){
+    flex-wrap: wrap;
+
+  }
+
+  &Img {
+    width: 40%;
+
+    @media screen and (max-width: 575px){
+      margin: auto;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &Desc {
+    width: 60%;
+    padding: 50px 10%;
+
+    @media screen and (max-width: 575px){
+      width: 100%;
+      padding: 15px 0;
+    }
+
+  }
+
+  &Title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  &Category {
+    margin-bottom: 15px;
+  }
+
+  &Description {
+    margin-bottom: 20px;
+  }
+
+  &Price {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}

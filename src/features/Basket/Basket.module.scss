@@ -1,0 +1,28 @@
+.basket {
+  &Title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &Products {
+    margin-top: 25px;
+  }
+
+  &Total {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+
+  &Img {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      max-width: 100%;
+    }
+  }
+}
+

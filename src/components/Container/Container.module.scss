@@ -1,0 +1,18 @@
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.containerFluid {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 1024px){
+  .containerFluid {
+    max-width: 1170px;
+    padding: 0;
+    margin: auto;
+  }
+}

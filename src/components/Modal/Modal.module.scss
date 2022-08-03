@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+.modal {
+  width: 100%;
+  max-width: 800px;
+  background: $color-white;
+  border-radius: 8px;
+  padding: 25px 15px;
+  position: relative;
+  margin: auto;
+
+  &Wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.8);
+  }
+
+  &Overlay {
+    padding: 25px 15px;
+    height: 100%;
+    overflow: auto;
+  }
+
+  &Close {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    background: transparent;
+    border: 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    @media all and (hover: hover) {
+      &:hover {
+        svg {
+          fill: $color-assets-hover;
+        }
+      }
+    }
+    &:active {
+      svg {
+        fill: $color-assets-active;
+      }
+    }
+  }
+
+}
