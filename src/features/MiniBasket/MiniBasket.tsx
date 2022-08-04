@@ -41,17 +41,17 @@ export const MiniBasket = () => {
             <g fill="none" fillRule="evenodd">
               <path
                 d="M7 7h22v18a4 4 0 0 1-4 4H11a4 4 0 0 1-4-4V7z"
-                stroke="currentColor"
+                stroke="#000"
                 strokeWidth="2"
-              ></path>
+              />
               <path
                 d="M13 10V6c0-2.993 2.009-5 5-5s5 2.026 5 5v4"
-                stroke="currentColor"
+                stroke="#000"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></path>
-              <circle className="cart-not-empty" cx="18" cy="18" r="4" fill="#fff"></circle>
+              />
+              <circle className="cart-not-empty" cx="18" cy="18" r="4" fill="#fff" />
               <text
                 x="50%"
                 y="50%"
@@ -67,7 +67,7 @@ export const MiniBasket = () => {
             </g>
           </svg>
         </span>
-        <span>{totalPrise}$</span>
+        <span className={styles.miniBasketTotal}>{totalPrise}$</span>
       </button>
       <Modal isVisible={isVisibleModal} onCloseModal={onCloseModal}>
         <Basket total={totalPrise} />

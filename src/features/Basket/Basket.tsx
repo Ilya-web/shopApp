@@ -17,7 +17,7 @@ export const Basket: React.FC<TState> = ({ total }: TState) => {
   const [sentData, setSentData] = useState(false);
 
   const onSubmit = () => {
-    console.log(busket);
+    console.log('Order', busket);
     busket.forEach((p) => {
       return dispatch(resetAllProduct(p.product.id));
     });

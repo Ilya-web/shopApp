@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { productsActions, getProducts, getIsLoading } from 'features/Products/store';
 import { Product } from 'features/Products/Product';

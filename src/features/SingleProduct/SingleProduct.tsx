@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductAction, getSingleProducts, resetProduct } from 'features/SingleProduct/store';
 import { Container } from 'components/Container';
 import { Loader } from 'components/Loader';
-import { Counter } from 'features/Counter';
+import { Counter } from 'features/Сounter';
 import { normalizeCategory } from 'utils/common';
 import styles from './SingleProduct.module.scss';
 

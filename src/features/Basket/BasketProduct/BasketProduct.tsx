@@ -2,9 +2,8 @@ import React, { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { resetAllProduct, TState } from 'features/Basket/store';
 import { ReactComponent as Plus } from 'assets/icons/plus.svg';
-
+import { Counter } from 'features/Сounter';
 import styles from './BasketProduct.module.scss';
-import { Counter } from 'features/Counter';
 
 type TProps = {
   product: TState;

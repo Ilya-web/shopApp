@@ -19,6 +19,10 @@
     align-items: center;
     justify-content: center;
 
+    svg {
+      flex: 0 0 14px;
+    }
+
     @media all and (hover: hover) {
       &:hover {
         background: $color-assets-hover;

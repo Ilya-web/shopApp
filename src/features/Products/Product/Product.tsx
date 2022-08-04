@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { TProduct } from 'types/types';
 import { normalizeCategory } from 'utils/common';
-import { Counter } from 'features/Counter';
+import { Counter } from 'features/Сounter';
 
 import styles from './Product.module.scss';
 

@@ -5,11 +5,17 @@
     align-items: center;
     gap: 15px;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 30px 10px 0;
     border-bottom: 1px solid $color-text;
+    position: relative;
 
     &:first-child {
       border-top: 1px solid $color-text;
+    }
+
+    @media screen and (max-width: 575px){
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
@@ -27,7 +33,12 @@
   }
 
   &Title {
-    width: 40%;
+    width: 50%;
+
+    @media screen and (max-width: 575px){
+      font-size: 14px;
+      width: calc(100% - 90px);
+    }
   }
 
   &Prise {
@@ -45,6 +56,10 @@
     border: 0;
     transform: rotate(45deg);
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
 
     @media all and (hover: hover) {
       &:hover {

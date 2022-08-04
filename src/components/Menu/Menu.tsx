@@ -9,7 +9,6 @@ interface ICategory {
 }
 
 export const Menu: React.FC<ICategory> = ({ category }: ICategory) => {
-  console.log('cscs');
   return (
     <ul className={styles.menu}>
       <li>
